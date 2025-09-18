@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LocalBacker - Artisan Pastry Bakery</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <h1>LocalBacker</h1>
+            <p class="tagline">Artisan Pastries & Breads</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">Our Story</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#specials">Daily Specials</a></li>
+                <li><a href="#contact">Visit Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero-section">
+            <div class="hero-content">
+                <h2>Freshly Baked Happiness</h2>
+                <p>Handcrafted pastries made with love and the finest ingredients</p>
+                <button id="orderBtn" class="cta-button">Order Now</button>
+            </div>
+        </section>
+
+        <section id="about" class="section">
+            <h2>Our Story</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>LocalBacker began in 2010 with a simple mission: to bring authentic, artisanal baking to our community. Our founder, Emma, learned traditional baking techniques from her grandmother and combined them with modern flavors.</p>
+                    <p>Today, we continue to bake everything by hand, using locally-sourced ingredients and traditional methods that have been passed down through generations.</p>
+                </div>
+                <div class="about-image">
+                    <img src="bakery-logo.svg" alt="The Local Friendly Bakery Logo" width="300" height="300">
+                </div>
+            </div>
+        </section>
+
+        <section id="products" class="section">
+            <h2>Our Products</h2>
+            <div class="products-container">
+                <div class="product-card" data-product="croissant">
+                    <div class="product-image">
+                        <!-- Image placeholder -->
+                        <div class="image-placeholder">Croissant</div>
+                    </div>
+                    <h3>Butter Croissants</h3>
+                    <p>Flaky, buttery layers that melt in your mouth</p>
+                    <p class="price">$3.50</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card" data-product="sourdough">
+                    <div class="product-image">
+                        <!-- Image placeholder -->
+                        <div class="image-placeholder">Sourdough</div>
+                    </div>
+                    <h3>Sourdough Bread</h3>
+                    <p>Traditional sourdough with a perfect crust</p>
+                    <p class="price">$6.75</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card" data-product="cake">
+                    <div class="product-image">
+                        <!-- Image placeholder -->
+                        <div class="image-placeholder">Cake</div>
+                    </div>
+                    <h3>Chocolate Cake</h3>
+                    <p>Rich, moist cake with ganache frosting</p>
+                    <p class="price">$28.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card" data-product="cookie">
+                    <div class="product-image">
+                        <!-- Image placeholder -->
+                        <div class="image-placeholder">Cookie</div>
+                    </div>
+                    <h3>Chocolate Chip Cookies</h3>
+                    <p>Soft-baked with premium chocolate</p>
+                    <p class="price">$2.25</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="specials" class="section">
+            <h2>Daily Specials</h2>
+            <div class="specials-container">
+                <div class="day-special">
+                    <h3>Monday</h3>
+                    <p>Cinnamon Rolls</p>
+                    <p class="discount">20% Off</p>
+                </div>
+                <div class="day-special">
+                    <h3>Wednesday</h3>
+                    <p>Artisan Breads</p>
+                    <p class="discount">Buy One Get One 50% Off</p>
+                </div>
+                <div class="day-special">
+                    <h3>Friday</h3>
+                    <p>Fruit Tarts</p>
+                    <p class="discount">15% Off</p>
+                </div>
+                <div class="day-special">
+                    <h3>Weekend</h3>
+                    <p>Special Pastry Box</p>
+                    <p class="discount">$20 for 6 Assorted Pastries</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <h2>Visit Us</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Store Hours</h3>
+                    <p>Monday - Friday: 7am - 7pm</p>
+                    <p>Saturday: 8am - 8pm</p>
+                    <p>Sunday: 8am - 5pm</p>
+                    
+                    <h3>Location</h3>
+                    <p>123 Bakery Street</p>
+                    <p>Flourville, CA 90210</p>
+                    
+                    <h3>Contact</h3>
+                    <p>Phone: (555) 123-4567</p>
+                    <p>Email: hello@localbacker.com</p>
+                </div>
+                <div class="contact-form">
+                    <h3>Order Ahead</h3>
+                    <form id="orderForm">
+                        <div class="form-group">
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone:</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="orderDetails">Order Details:</label>
+                            <textarea id="orderDetails" name="orderDetails" rows="4" required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="pickupDate">Pickup Date:</label>
+                            <input type="date" id="pickupDate" name="pickupDate" required>
+                        </div>
+                        <button type="submit" class="submit-btn">Place Order</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <h2>LocalBacker</h2>
+                <p>Artisan Pastries & Breads</p>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">Our Story</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#specials">Daily Specials</a></li>
+                    <li><a href="#contact">Visit Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-newsletter">
+                <h3>Stay Updated</h3>
+                <p>Subscribe to our newsletter for special offers</p>
+                <form id="newsletterForm">
+                    <input type="email" placeholder="Your email address" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 LocalBacker. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Cart popup removed as requested -->
+
+    <script src="script.js"></script>
+</body>
+</html>

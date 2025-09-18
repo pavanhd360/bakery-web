@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500">
+  <!-- Background circle -->
+  <circle cx="250" cy="250" r="200" fill="#B8B1D1" />
+  
+  <!-- Hand holding croissant -->
+  <path d="M180,350 C160,330 150,300 160,270 C170,240 190,220 220,210 C250,200 280,210 300,230 C320,250 330,280 320,310 C310,340 290,360 260,370 C230,380 200,370 180,350 Z" fill="#E8C4A2" />
+  
+  <!-- Croissant -->
+  <path d="M220,210 C240,190 270,180 300,190 C330,200 350,220 360,250 C370,280 360,310 340,330 C320,350 290,360 260,350 C230,340 210,320 200,290 C190,260 200,230 220,210 Z" fill="#F4A261" />
+  
+  <!-- Croissant details -->
+  <path d="M230,220 C250,200 280,190 310,200 C340,210 360,230 370,260 C380,290 370,320 350,340" fill="none" stroke="#E76F51" stroke-width="5" />
+  <path d="M240,230 C260,210 290,200 320,210 C350,220 370,240 380,270" fill="none" stroke="#E76F51" stroke-width="5" />
+  <path d="M250,240 C270,220 300,210 330,220" fill="none" stroke="#E76F51" stroke-width="5" />
+  
+  <!-- Fingernails -->
+  <ellipse cx="170" cy="290" rx="10" ry="5" fill="#F8C4C4" />
+  <ellipse cx="180" cy="270" rx="10" ry="5" fill="#F8C4C4" />
+  
+  <!-- Text around the circle -->
+  <path id="top-text-path" d="M250,50 A200,200 0 0,1 450,250" fill="none" />
+  <path id="bottom-text-path" d="M50,250 A200,200 0 0,0 250,450" fill="none" />
+  
+  <text font-family="serif" font-weight="bold" font-size="40" fill="#4A2511">
+    <textPath href="#top-text-path" startOffset="50%">
+      <tspan text-anchor="middle">THE LOCAL</tspan>
+    </textPath>
+  </text>
+  
+  <text font-family="serif" font-weight="bold" font-size="40" fill="#4A2511">
+    <textPath href="#bottom-text-path" startOffset="50%">
+      <tspan text-anchor="middle">FRIENDLY BAKERY</tspan>
+    </textPath>
+  </text>
+</svg>
